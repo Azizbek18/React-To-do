@@ -33,11 +33,11 @@ function Home() {
     seteditIndex(index);
   }
   return (
-    <div className='flex justify-center items-center h-[100vh] w-full bg-center bg-cover p-[20px]' style={{backgroundImage:"url('./Tun.png')"}}>
-      <div className='bg-[#c9c9c97e] w-[600px] h-[auto] flex justify-center items-center flex-col rounded-[10px] p-[20px]'  >
-        <form className='flex gap-[10px] w-[100%] p-[20px] '  >
-          <input value={oyna} maxLength={20} onChange={(e)=>setoyna(e.target.value)} className='w-[80%] h-[40px] pl-[20px] rounded-[10px] outline-none focus:outline-none bg-linear-to-r from-[#aaa9a9] to-[#b5b4b4] text-[#0000009a] ' type="text" placeholder="Ma'lumot kiriting"/>
-          <button type='submit' onClick={Qushish}  className='w-[20%] xs:text-[10px] sm:text-[13px] md:text-[15px] h-[40px] bg-[#2d1d1d] bg-gradient-to-r from-[#9c4701] to-[#91650f] text-[#ffffff] rounded-[10px] hover:from-[white] hover:text-[#0e0d09b3] font-[700]'>{editIndex !==null?"Saqlash":"Qo'shish"}</button> 
+    <div className='flex justify-center items-center h-[100vh] w-full bg-center bg-cover p-[10px]' style={{backgroundImage:"url('./Tun.png')"}}>
+      <div className='bg-[#c9c9c97e]  w-[600px] h-[auto] flex justify-center items-center flex-col rounded-[10px] p-[0px]'  >
+        <form className='flex gap-[10px] w-[100%] px-[10px] py-[15px] '  >
+          <input value={oyna} maxLength={20} onChange={(e)=>setoyna(e.target.value)} className='w-[75%] h-[40px] pl-[20px] rounded-[10px] outline-none focus:outline-none bg-linear-to-r from-[#aaa9a9] to-[#b5b4b4] text-[#0000009a] ' type="text" placeholder="Ma'lumot kiriting"/>
+          <button type='submit' onClick={Qushish}  className='w-[25%] text-[12px] px-[10px] sm:text-[15px] md:text-[18px] h-[40px] bg-[#2d1d1d] bg-gradient-to-r from-[#9c4701] to-[#91650f] text-[#ffffff] rounded-[10px] hover:from-[white] hover:text-[#0e0d09b3] font-[700]'>{editIndex !==null?"Saqlash":"Qo'shish"}</button> 
         </form>
         {
           ruyxat.length > 0 && (
